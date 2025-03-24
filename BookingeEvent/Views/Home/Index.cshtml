@@ -2,7 +2,36 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="containers">
+    <div class="text-center">
+        <div class="hero-content">
+            <h1 class="display-4">Welcome To Event Management</h1>
+            <h1 class="animate__animated animate__fadeInDown">Plan Your Perfect Event</h1>
+            <p class="animate__animated animate__fadeInUp">Find the best venues & book your events seamlessly</p>
+        </div>
+    </div>
+    <br />
+    <!-- Slideshow Section -->
+    <div id="eventCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="~/images/pic2.jpg" class="d-block w-100" alt="Event 1">
+            </div>
+            <div class="carousel-item">
+                <img src="~/images/pic3.jpg" class="d-block w-100" alt="Event 2">
+            </div>
+            <div class="carousel-item">
+                <img src="~/images/pic4.jpeg" class="d-block w-100" alt="Event 3">
+            </div>
+        </div>
+        <!-- Previous & Next Buttons -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#eventCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#eventCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
 </div>

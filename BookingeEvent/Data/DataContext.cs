@@ -12,6 +12,9 @@ namespace BookingEvent.Data
         public DbSet<Event> Events { get; set; }
         public DbSet<Booking> Bookings { get; set; }
 
+        public DbSet<Login> Logins { get; set; }
+        public DbSet<Register> Registers { get; set; }
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Booking>()

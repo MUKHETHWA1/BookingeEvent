@@ -17,6 +17,8 @@ namespace BookingEvent.Models
         public DateTime EventDate { get; set; }
         public string Description { get; set; }
 
+        [DisplayName("Select Venue Here")]
+
         [ForeignKey("Venue")]
         public int? VenueId { get; set; }
         public Venue Venue { get; set; }

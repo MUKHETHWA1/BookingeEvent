@@ -1,6 +1,23 @@
 ﻿@{
-    ViewData["Title"] = "Privacy Policy";
+    ViewData["Title"] = "About Us";
 }
-<h1>@ViewData["Title"]</h1>
+@* <h1>@ViewData["Title"]</h1> *@
 
-<p>Use this page to detail your site's privacy policy.</p>
+<!-- About Section -->
+<section class="about">
+    <div class="container text-center">
+        <h2 class="animate__animated animate__fadeIn">Why Choose Us?</h2>
+        <p class="animate__animated animate__fadeInUp">Our event planner system helps you find and book venues easily.</p>
+    </div>
+
+    <br />
+    <!-- Slideshow Section -->
+    <div id="eventCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="~/images/picture1.jpeg" class="d-block w-100" alt="Event 1">
+            </div>
+        </div>
+    </div>
+</section>
+
