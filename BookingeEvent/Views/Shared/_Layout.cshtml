@@ -10,9 +10,17 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">BookingeEvent</a>
+        <!--Code to hide nav bar from login and register-->
+        @{
+            var currentAction = ViewContext.RouteData.Values["action"]?.ToString();
+            var currentController = ViewContext.RouteData.Values["controller"]?.ToString();
+
+        }
+        @if (User.Identity.IsAuthenticated || (currentController != "Logins" && currentController != "Registers" || (currentAction != "Index" && currentAction != "Create")))
+        {
+            <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+                <div class="container-fluid">
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Booking Event</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -25,10 +33,21 @@
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Venue">Browse Available Venues</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Venues" asp-action="Index">Venues</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Events" asp-action="Index">Book Event</a>
+                        </li>
+                       
                     </ul>
                 </div>
             </div>
         </nav>
+        }
     </header>
     <div class="container">
         <main role="main" class="pb-3">

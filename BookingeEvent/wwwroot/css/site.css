@@ -105,3 +105,68 @@ body {
     padding: 50px 0;
     background: #f8f9fa;
 }
+
+
+
+/*css for login and register*/
+.login-container {
+    min-height: 100vh;
+}
+
+.image-container {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-container {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    background-color: white;
+    padding: 20px;
+}
+
+.image-container img {
+    max-width: 100%;
+    margin-top: 20px;
+}
+
+
+#registerBtn {
+    margin-top: 10px;
+    width: 60%;
+    background-color: #766fad;
+    color: white;
+    border: none;
+    transition: all 0.8s ease-in-out;
+}
+
+    #registerBtn:hover {
+        background-color: #5e5794;
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+        transform: translateY(-3px);
+    }
+
+.login-btn {
+    text-align: center;
+}
+
+    .login-btn a {
+        color: var(--dark-blue);
+        text-decoration: none;
+    }
+
+    .login-btn span {
+        color: var(--pink);
+    }
+
+.page-header {
+    color: var(--blue);
+}
+
+.form-group label {
+    color: var(--form-text-color);
+}
