@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34511.84
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookingeEvent", "BookingeEvent\BookingeEvent.csproj", "{B15A71C4-AFB4-47D0-AC41-332F29C7E21F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B15A71C4-AFB4-47D0-AC41-332F29C7E21F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B15A71C4-AFB4-47D0-AC41-332F29C7E21F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B15A71C4-AFB4-47D0-AC41-332F29C7E21F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B15A71C4-AFB4-47D0-AC41-332F29C7E21F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FEF64387-7CCA-46E5-BEB8-A931AC36D143}
+	EndGlobalSection
+EndGlobal
