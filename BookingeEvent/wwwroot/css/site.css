@@ -20,3 +20,88 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+.containers {
+    background-color: rgba(255, 255, 255, 0.8); /* Add a semi-transparent background to the container */
+    border-radius: 10px; /* Add border radius for rounded corners */
+    padding: 20px; /* Add padding to ensure content is not too close to the edges */
+    margin-top: 20px; /* Add space between navbar and content */
+}
+/* Center the images horizontally within carousel items */
+.carousel-item {
+    position: relative;
+    text-align: center;
+}
+
+/* Styling for carousel container */
+.carousel {
+    max-width: 70%;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    max-height: 70vh; /* Set a maximum height using viewport height units */
+}
+
+/* Styling for carousel inner container */
+.carousel-inner {
+    width: 100%;
+    height: 100%; /* Use full height of the carousel container */
+    display: flex; /* Use flexbox to align items */
+}
+
+    /* Styling for carousel images */
+    .carousel-inner img {
+        width: auto; /* Set width to auto to maintain aspect ratio */
+        max-height: 100%; /* Image takes up maximum height of the carousel */
+        object-fit: cover; /* Cover the container without distortion */
+        transition: transform 2s ease-in-out;
+    }
+
+
+
+/* Zoom effect on active image */
+.carousel-item.active img {
+    transform: scale(1.1);
+}
+
+/* Overlay effect */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+}
+
+/* Styling for carousel controls */
+.carousel-control-prev,
+.carousel-control-next {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: #fff;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.carousel-control-prev {
+    left: 0;
+}
+
+.carousel-control-next {
+    right: 0;
+}
+
+.hero-content {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* About Section */
+.about {
+    padding: 50px 0;
+    background: #f8f9fa;
+}
