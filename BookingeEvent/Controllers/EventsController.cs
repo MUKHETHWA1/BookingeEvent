@@ -63,7 +63,7 @@ namespace BookingEvent.Controllers
             {
                 _context.Add(@event);
                 await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
+                return RedirectToAction("ThankYou");
             }
             ViewData["VenueId"] = new SelectList(_context.Venues, "VenueId", "VenueName", @event.VenueId);
             return View(@event);
@@ -159,6 +159,11 @@ namespace BookingEvent.Controllers
         private bool EventExists(int id)
         {
             return _context.Events.Any(e => e.EventId == id);
+        }
+
+        public IActionResult ThankYou()
+        {
+            return View();
         }
     }
 }
